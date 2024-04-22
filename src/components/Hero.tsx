@@ -1,12 +1,14 @@
+import Picture from '../assets/Picture.png'
+import Wave from '../assets/Wave.png'
 const Hero = () =>{
     return(
         <section className="w-full h-[calc(100%-56px)] relative">
             <div>
-                <img src="src\assets\Picture.png" alt="" />
+                <img src={Picture} alt="" />
             </div>
             <section className="mt-20 hidden lg:flex">
                 <div className="">
-                    <img src="src\assets\Wave.png" alt="" />
+                    <img src={Wave} alt="" />
                 </div>
             </section>
             <section className="flex">
