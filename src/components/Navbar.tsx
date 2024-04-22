@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Logo from '../../public/Logo.svg'
+import Logo from '../assets/Logo.svg'
 
 const Navbar = () =>{
     const[isopen,setIsOpen] = useState(false)
@@ -27,7 +27,7 @@ const Navbar = () =>{
             
             <section className="lg:hidden w-full h-14 items-center flex  justify-between relative">
                 <div className="w-32 p-4">
-                    <img src="../public/Logo.svg" className="w-full" alt="" />
+                    <img src={Logo} className="w-full" alt="" />
                 </div>
                 <div className={`w-full h-[calc(100vh-3.5rem)] top-[3.5rem] fixed z-10 bg-white p-4 transition-left duration-300 ease-in-out ${isopen ? 'left-0' : '-left-full'}`}>
                     <ul className="w-full h-full flex flex-col gap-4 text-sm">
